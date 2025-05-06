@@ -34,11 +34,10 @@ const Theme = () => {
         const themeContent = entry.target.querySelector('.theme-content');
         
         if (entry.isIntersecting) {
-          // Element is in the viewport, apply the "slideIn" animations
           themePhoto.style.animation = 'slideInLeft 0.8s ease-out forwards';
           themeContent.style.animation = 'slideInRight 0.8s ease-out forwards';
         } else {
-          // Element is out of the viewport, apply reverse animations
+          
           themePhoto.style.animation = 'slideOutLeft 0.8s ease-in forwards';
           themeContent.style.animation = 'slideOutRight 0.8s ease-in forwards';
         }
