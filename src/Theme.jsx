@@ -3,12 +3,12 @@ import "./Theme.css";
 
 const themes = [
   {
-    src: "src/assets/deartomorrow.jpg",
+    src: "TEDx/assets/deartomorrow.jpg",
     title: "DEAR TOMORROW",
     desc: `Every tomorrow is a new beginning for all. It gives us immense potential to start anew, blesses us with unending hope to envision the future we dream of, and provides another chance to forget the regrets we have, to leave the past behind, and to move a step closer to the life we aspire to. With every tomorrow, we can become a little stronger and kinder, creating a new self that can bring even the slightest change to this world.`,
   },
   {
-    src: "src/assets/newreality.png",
+    src: "TEDx/assets/newreality.png",
     title: "UNBOXING NEW REALITY",
     desc: `Unboxing the new reality" is to give way to a new normal where we are not living in the same kind of environment as of a few years ago. We now live in a new reality, so we have to acknowledge the fact that this differs from situation that prevailed prior to the start of the covid crisis. Our theme extends to showcase the new trends in technology, arts, design and other fields.`,
   },
