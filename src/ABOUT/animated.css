@@ -1,0 +1,19 @@
+.animated-text-container {
+    display: inline-block;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .animated-letter {
+    display: inline-block;
+    animation: floatUpDown 1.5s ease-in-out infinite;
+    animation-delay: 0s;
+  }
+  
+  @keyframes floatUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+  }
+  

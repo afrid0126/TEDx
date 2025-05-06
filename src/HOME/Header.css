@@ -1,0 +1,80 @@
+.custom-navbar {
+  background-color: #000;
+  border: 2px solid red;
+  border-radius: 20px;
+  max-width: 90%;
+  width: 720px; /* Fixed but reasonable width */
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Nav links */
+.custom-navbar .nav-link {
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin: 0 10px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: red;
+  transition: width 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.custom-navbar .nav-link:hover {
+  text-shadow: 0 0 8px red;
+}
+
+/* Toggle button for mobile */
+.navbar-toggler {
+  border: 1px solid red;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive for tablet & mobile screens */
+@media (max-width: 992px) {
+  .custom-navbar {
+    width: 90%;
+    text-align: center;
+  }
+
+  .custom-navbar .nav-link {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    width: 100%;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  /* Optional: Make logo smaller on mobile */
+  .navbar-brand img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .navbar-toggler {
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,165 @@
+.themes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  background-color: black;
+  align-items: center;
+  color: white;
+}
+
+.theme-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 95%;
+  max-width: 900px;
+  height: auto;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.theme-card:hover {
+  transform: scale(1.05); 
+}
+
+.theme-photo,
+.theme-content {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.theme-photo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.theme-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; 
+}
+
+.theme-content {
+  flex: 1.5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideInRight 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.theme-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e60000; 
+}
+
+.theme-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .theme-card {
+    flex-direction: column;
+  }
+
+  .theme-image {
+    height: 400px;
+  }
+
+  .theme-content {
+    padding: 15px;
+  }
+
+  .theme-title {
+    font-size: 1.4rem;
+  }
+
+  .theme-description {
+    font-size: 0.95rem;
+  }
+}
+
+.theme-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-photo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.theme-photo:hover::after {
+  opacity: 1; 
+}
+
+.theme-photo img {
+  transition: opacity 0.3s ease;
+}
+
+.theme-card:hover .theme-photo img {
+  opacity: 0.8; 
+}
