@@ -17,7 +17,7 @@ const teamData1 = [
       {
         name: "G Lalith Aditya",
         role: "Executive Director",
-        image: "TEDx/assets/2024/Organisers/aditya.jpg",
+        image: "TEDx/assets/2024/Organisers/Aditya.jpg",
       },
     ],
   },
@@ -57,7 +57,7 @@ members:[
   {
     name:"Deepika Shalini",
     role:"Member",
-    image:"TEDx/assets/2024/Editorial/deepika.jpg",
+    image:"TEDx/assets/2024/Editorial/Deepika.jpg",
   },
   {
     name:"Meka Bhavya Sree",
@@ -145,27 +145,27 @@ members:[
       {
         name: "A Supraja",
         role: "Director",
-        image: "TEDx/assets/2024/pandmTeam/Supraja.jpg",
+        image: "TEDx/assets/2024/PandmTeam/Supraja.jpg",
       },
       {
         name: "M Gayathri",
         role: "Member",
-        image: "TEDx/assets/2024/pandmTeam/gayathri.jpg",
+        image: "TEDx/assets/2024/PandmTeam/gayathri.jpg",
       },
       {
         name: "Mythreyi Mahanandigiri",
         role: "Member",
-        image: "TEDx/assets/2024/pandmTeam/mythri.jpg",
+        image: "TEDx/assets/2024/PandmTeam/mythri.jpg",
       },
       {
         name: "Katika Sailu",
         role: "Member",
-        image: "TEDx/assets/2024/pandmTeam/sailu.jpg",
+        image: "TEDx/assets/2024/PandmTeam/sailu.jpg",
       },
       {
         name: "M S Faiza Anjum",
         role: "Member",
-        image: "TEDx/assets/2024/pandmTeam/faiza.jpg",
+        image: "TEDx/assets/2024/PandmTeam/faiza.jpg",
       },
     ]
   },
@@ -299,7 +299,7 @@ const teamData2 = [
       {
         name: "G Lalith Aditya",
         role: "Co-Director",
-        image: "TEDx/assets/2024/Organisers/aditya.jpg",
+        image: "TEDx/assets/2024/Organisers/Aditya.jpg",
       },
       {
         name: "Abinavya Mudimela",
@@ -334,17 +334,17 @@ const teamData2 = [
       {
         name: "D.jahnavi",
         role: "Director",
-        image: "TEDx/assets/2023/PublicRelations/jahnavi_.jpg",
+        image: "TEDx/assets/2023/publicRelations/jahnavi_.jpg",
       },
       {
         name: "Shreya",
         role: "Director",
-        image: "TEDx/assets/2023/PublicRelations/shreya.jpg",
+        image: "TEDx/assets/2023/publicRelations/Shreya.jpg",
       },
       {
         name: "Shaik mohammed khateeb",
         role: "Member",
-        image: "TEDx/assets/2023/PublicRelations/mohammad.jpg",
+        image: "TEDx/assets/2023/publicRelations/mohammad.jpg",
       },
     ],
   },
@@ -354,7 +354,7 @@ const teamData2 = [
       {
         name: "Kota Amog",
         role: "Director",
-        image: "TEDx/assets/2023/SG/Amog.Kota.jpeg",
+        image: "TEDx/assets/2023/SG/kota.jpeg",
       },
       {
         name: "Sudhireddy sai Bhavana",
