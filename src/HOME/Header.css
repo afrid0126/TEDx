@@ -5,7 +5,7 @@
   border-radius: 20px;
   max-width: 90%;
   width: 900px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0.5rem 1rem;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
 }
@@ -16,11 +16,12 @@
   height: auto;
   max-height: 100px;
   object-fit: contain;
+  margin-left:10px;
 }
 
 /* Nav links */
 .custom-navbar .nav-link {
-  color: white !important;
+  color: white ;
   font-weight: bold;
   font-size: 1.05rem;
   margin: 0 10px;
@@ -55,14 +56,14 @@
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
-/* Responsive */
 @media (max-width: 992px) {
   .custom-navbar {
-    width: 95%;
+    width: 100%;
     box-shadow: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 0;
+    margin: 0; 
+    padding: 10px 15px;
   }
 
   .custom-navbar .nav-link {
@@ -71,14 +72,17 @@
   }
 
   .logo-img {
-    width: 230px;
-    max-height: 80px;
+    width: 180px;
+    max-height: 70px;
+    margin-left: 10px;
   }
 }
 
+/* Extra small devices */
 @media (max-width: 576px) {
   .logo-img {
-    width: 230px;
-    max-height: 80px;
+    width: 160px;
+    max-height: 60px;
+    margin-left: 10px;
   }
 }
