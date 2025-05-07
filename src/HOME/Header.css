@@ -1,17 +1,26 @@
+/* Navbar */
 .custom-navbar {
   background-color: #000;
   border: 2px solid red;
   border-radius: 20px;
   max-width: 90%;
-  width: 720px; /* Fixed but reasonable width */
-  padding: 0.5rem 1rem;
+  width: 900px;
   margin: 0 auto;
+  padding: 0.5rem 1rem;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo-img {
+  width: 150px;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
 }
 
 /* Nav links */
 .custom-navbar .nav-link {
-  color: rgb(255, 255, 255) !important;
+  color: white !important;
   font-weight: bold;
   font-size: 1.05rem;
   margin: 0 10px;
@@ -38,7 +47,7 @@
   text-shadow: 0 0 8px red;
 }
 
-/* Toggle button for mobile */
+/* Toggler */
 .navbar-toggler {
   border: 1px solid red;
 }
@@ -47,34 +56,29 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Responsive for tablet & mobile screens */
+/* Responsive */
 @media (max-width: 992px) {
   .custom-navbar {
-    width: 90%;
-    text-align: center;
+    width: 95%;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
   }
 
   .custom-navbar .nav-link {
     display: block;
     margin: 10px 0;
   }
+
+  .logo-img {
+    width: 250px;
+    max-height: 80px;
+  }
 }
 
-@media (max-width: 768px) {
-  .custom-navbar {
-    width: 100%;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-  }
-
-  /* Optional: Make logo smaller on mobile */
-  .navbar-brand img {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .navbar-toggler {
-    margin-top: 5px;
+@media (max-width: 576px) {
+  .logo-img {
+    width: 250px;
+    max-height: 80px;
   }
 }
