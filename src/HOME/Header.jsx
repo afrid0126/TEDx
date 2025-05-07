@@ -26,18 +26,19 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Centered Nav Items */}
-        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul className="navbar-nav text-center">
-            <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/theme">Theme</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/speakers">Speakers</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/performers">Performers</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/team">Team</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
-          </ul>
-        </div>
+  
+        <div className="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarNav">
+  <ul className="navbar-nav text-center">
+    <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/theme">Theme</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/speakers">Speakers</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/performers">Performers</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/team">Team</Link></li>
+    <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
+  </ul>
+</div>
+
       </nav>
     </>
   );
