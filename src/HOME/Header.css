@@ -71,14 +71,14 @@
   }
 
   .logo-img {
-    width: 200px;
+    width: 230px;
     max-height: 80px;
   }
 }
 
 @media (max-width: 576px) {
   .logo-img {
-    width: 200px;
+    width: 230px;
     max-height: 80px;
   }
 }

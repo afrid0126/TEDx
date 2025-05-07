@@ -7,7 +7,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg custom-navbar mt-3">
+      <nav className="navbar navbar-expand-lg custom-navbar me-3">
         <div className="container-fluid d-flex justify-content-between align-items-center px-3">
           <Link className="navbar-brand d-flex align-items-center" to="/">
             <img src="/TEDx/assets/tedex.png" alt="TEDx GPREC" className="logo-img" />
