@@ -58,12 +58,11 @@
 }
 @media (max-width: 992px) {
   .custom-navbar {
-    width: 250px;
+    width: 100%;
     box-shadow: none;
     border: none;
     border-radius: 0;
     margin: 0; 
-    margin-left:10px;
     padding: 10px 15px;
   }
 
@@ -73,7 +72,7 @@
   }
 
   .logo-img {
-    width: 180px;
+    width: 230px;
     max-height: 70px;
     margin-left: 10px;
   }
