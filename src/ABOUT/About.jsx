@@ -7,7 +7,7 @@ const About = () => {
     <section className="about-section">
       <div className="about-block">
         <AnimatedText>
-          About <span className="red-text fs-5">TED</span>
+          About <span className="red-text fs-3">TED</span>
         </AnimatedText>
         <p>
           <span className="highlight-red">TED</span> (Technology, Entertainment, Design) is a non-profit media organization that posts international talks online for free distribution under the slogan <span className="highlight">"Ideas change everything"</span>. <br /><br />
