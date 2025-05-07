@@ -7,7 +7,7 @@ const About = () => {
     <section className="about-section">
       <div className="about-block">
         <AnimatedText>
-          About <span className="red-text">TED</span>
+          About <span className="red-text fs-5">TED</span>
         </AnimatedText>
         <p>
           <span className="highlight-red">TED</span> (Technology, Entertainment, Design) is a non-profit media organization that posts international talks online for free distribution under the slogan <span className="highlight">"Ideas change everything"</span>. <br /><br />
@@ -17,7 +17,7 @@ const About = () => {
 
       <div className="about-block">
         <AnimatedText>
-          About <span className="red-text">TEDx</span>
+          About <span className="red-text fs-5">TEDx</span>
         </AnimatedText>
         <p>
           In the spirit of <span className="highlight">"ideas change everything"</span>, <span className="highlight-red">TEDx</span> event is a local gathering where live TED-like talks and performances are shared with the community. <span className="highlight-red">TEDx</span> events are fully planned and coordinated independently, on a community-by-community basis. <br /><br />
@@ -28,7 +28,7 @@ const About = () => {
 
       <div className="about-block">
         <AnimatedText>
-          About <span className="red-text">TEDxGPREC</span>
+          About <span className="red-text fs-5">TEDxGPREC</span>
         </AnimatedText>
         <p>
           <span className="highlight-red">TEDxGPREC</span> is an independently organized TEDx event, which aims to bring to its stage, ideas worth spreading from all over India. <span className="highlight-red">TEDxGPREC</span> talks will encapsulate ideas around the theme, expanding concepts, ideas, and enhancements that will motivate, inspire, and introduce transformative topics to the audience. <br /><br />
