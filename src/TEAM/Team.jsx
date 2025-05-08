@@ -448,8 +448,41 @@ const Team = () => {
         ))}
       </section>
 
-      {/* Repeat similar for 2023 team */}
+      <section className="team-section">
+        <h2 className="team-title">TEDx 2023 Team</h2>
+        {teamData2.map((team, sectionIndex) => (
+          <div key={team.section}>
+            <h3 className="team-category">{team.section}</h3>
+            <div className="team-grid">
+              {team.members.map((member, idx) => (
+                <div
+                  key={idx}
+                  ref={(el) => (cardRefs.current[idx] = el)}
+                  className={`team-card ${animate ? "animate-in" : ""}`}
+                  style={{
+                    "--i": (idx % 3) - 1,
+                    position: animate ? "relative" : "absolute",
+                    left: animate ? "auto" : "50%",
+                    top: animate ? "auto" : "50%",
+                    transform: animate
+                      ? undefined
+                      : "translate(-50%, -50%) scale(0.2)",
+                    transition: "transform 0.8s ease-out, opacity 0.8s ease-out",
+                  }}
+                >
+                  <img src={member.image} alt={member.name} className="team-img" />
+                  <div className="team-caption">
+                    <div className="team-name">{member.name}</div>
+                    <div className="team-role">{member.role}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
     </div>
   );
 };
+export default Team;
 
