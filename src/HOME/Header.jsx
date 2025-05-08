@@ -6,41 +6,37 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg custom-navbar mt-3">
-        <div className="container-fluid d-flex justify-content-between align-items-center px-3">
-          <Link className="navbar-brand d-flex align-items-center" to="/">
-            <img src="/TEDx/assets/tedex.png" alt="TEDx GPREC" className="logo-img" />
-          </Link>
+    <nav className="navbar navbar-expand-lg glass-navbar">
+      <div className="container-fluid px-4">
+        <Link className="navbar-brand mx-auto" to="/">
+          <img src="/TEDx/assets/tedex.png" alt="TEDx GPREC" className="logo-img" />
+        </Link>
 
-          <button
-            className="navbar-toggler me-3"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse justify-content-center mt-3 mt-lg-0" id="navbarNav">
+          <ul className="navbar-nav text-center">
+            <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/theme">Theme</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/speakers">Speakers</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/performers">Performers</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/team">Team</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
+          </ul>
         </div>
-
-  
-        <div className="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarNav">
-  <ul className="navbar-nav text-center">
-    <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
-    <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
-    <li className="nav-item"><Link className="nav-link" to="/theme">Theme</Link></li>
-    <li className="nav-item"><Link className="nav-link" to="/speakers">Speakers</Link></li>
-    <li className="nav-item"><Link className="nav-link" to="/performers">Performers</Link></li>
-    <li className="nav-item"><Link className="nav-link" to="/team">Team</Link></li>
-    <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
-  </ul>
-</div>
-
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 

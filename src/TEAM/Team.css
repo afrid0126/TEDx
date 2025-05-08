@@ -1,93 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Caveat&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f1a;
+}
+
+.team-container {
+  padding: 2rem 1rem;
+}
+
 .team-section {
   background: linear-gradient(to bottom, #000000, #1f2937, #000000);
   padding: 3rem 1rem;
-  color: white;
   text-align: center;
+  color: white;
 }
 
 .team-title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
   color: #dc2626;
-  margin-bottom: 2.5rem;
+  margin-top:1.5rem;
+  margin-bottom: 3rem;
 }
 
 .team-category {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   color: #ef4444;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top:1.5rem;
 }
 
 .team-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
 }
 
 .team-card {
-  background-color: #181428;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: white;
+  padding: 1rem 1rem 2.5rem;
+  width: 220px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transform: rotate(calc(-3deg + (6deg * var(--i))));
   transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation-fill-mode: both;
   opacity: 0;
+  transform-origin: center;
 }
 
 .team-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(0deg);
 }
 
 .team-img {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
+  width: 100%;
+  height: 220px;
   object-fit: cover;
-  border: 4px solid #dc2626;
+  border-radius: 4px;
   margin-bottom: 1rem;
 }
 
+.team-caption {
+  font-family: 'Caveat', cursive;
+  font-size: 1.05rem;
+  color: #ff0000;
+}
+
 .team-name {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .team-role {
-  color: #f87171;
-  font-style: italic;
+  font-size: 0.9rem;
+  color: #6b7280;
 }
 
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100px);
+@keyframes fly-in {
+  0% {
     opacity: 0;
+    transform: translate(0px, 0px) scale(0.2) rotate(0deg);
   }
-  to {
-    transform: translateX(0);
+  100% {
     opacity: 1;
+    transform: rotate(calc(-3deg + (6deg * var(--i))));
   }
 }
 
-@keyframes slideInRight {
-  from {
-    transform: translateX(100px);
+.animate-in {
+  animation: fly-in 0.8s ease-out forwards;
+}
+@keyframes fly-in {
+  0% {
     opacity: 0;
+    transform: translate(0px, 0px) scale(0.2);
   }
-  to {
-    transform: translateX(0);
+  100% {
     opacity: 1;
+    transform: rotate(calc(-3deg + (6deg * var(--i))));
   }
-}
-
-.slide-in-left {
-  animation: slideInLeft 0.8s ease-out forwards;
-}
-
-.slide-in-right {
-  animation: slideInRight 0.8s ease-out forwards;
 }
